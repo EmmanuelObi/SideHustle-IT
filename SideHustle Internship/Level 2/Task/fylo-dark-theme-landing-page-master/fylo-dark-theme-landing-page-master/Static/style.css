@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: hsl(217, 28%, 15%);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+.curvy {
+  position: absolute;
+  top: 18%;
+  z-index: -1;
+  width: 100%;
+}
+.curvy img {
+  width: 100%;
+  object-fit: cover;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.bold {
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+header {
+  font-family: "Raleway", sans-serif;
+}
+header nav .logo {
+  padding-left: 2%;
+}
+#navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+  align-items: center;
+}
+
+#navbar ul {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 100ms linear;
+}
+#navbar ul li a:hover {
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+.intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .content {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.illustration-image {
+  width: 45%;
+}
+.illustration-image img {
+  width: 100%;
+}
+.intro .content p {
+  color: hsl(0, 0%, 100%);
+}
+.intro .content p.text {
+  font-size: 16px;
+  text-align: center;
+}
+.intro .cta button,
+.form-footer .cta button {
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(176, 68%, 64%);
+  color: hsl(0, 0%, 100%);
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px;
+  width: 220px;
+  cursor: pointer;
+  transition: 300ms linear;
+}
+.intro .cta button:hover,
+.form-footer .cta button:hover {
+  background-color: hsl(198, 60%, 50%);
+}
+.offers {
+  margin-top: 18%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(218, 28%, 13%);
+}
+.offers .offer-content {
+  padding: 5% 5%;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.offer-content > div {
+  width: 40%;
+  height: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.offer-content .Summary {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.offer-content .offer-info {
+  font-size: 14px;
+  width: 80%;
+}
+.flyo-works {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  padding: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+.flyo-works .productive-image {
+  width: 50%;
+}
+.productive-image img {
+  width: 100%;
+}
+.flyo-works .cta-texts {
+  width: 45%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cta-texts p {
+  width: 75%;
+}
+.cta-texts a {
+  text-decoration: none;
+  font-size: 16px;
+  color: hsl(176, 68%, 64%);
+  border-bottom: 2px solid hsl(176, 68%, 64%);
+}
+.testimonies {
+  width: 100%;
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+.test-container {
+  position: relative;
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.test-container > img {
+  position: absolute;
+  top: 30%;
+  left: 1%;
+}
+.test-container .test img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.test-container .test {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 25px;
+  width: 30%;
+  height: 32%;
+  background-color: hsl(219, 30%, 18%);
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(46, 44, 44, 0.3);
+}
+.test-container .test .test-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.test-info div {
+  width: 80%;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.test-info div .name {
+  font-weight: 700;
+  font-size: 13px;
+}
+.form-footer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-footer .empty {
+  width: 100%;
+  height: 30%;
+  background-color: hsl(218, 28%, 13%);
+  z-index: -1;
+}
+.form-footer .form {
+  border-radius: 10px;
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  z-index: 1;
+  top: 5%;
+  background-color: hsl(217, 28%, 15%);
+  box-shadow: 10px 20px 10px rgba(15, 14, 14, 0.3);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.form-footer .form p {
+  width: 70%;
+  line-height: 30px;
+}
+.form-footer .form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+.form-footer .form div input {
+  width: 65%;
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 15px;
+  transition: 300ms linear;
+}
+.form-footer footer {
+  width: 100%;
+  height: 70%;
+  background-color: hsl(216, 53%, 9%);
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+footer .footer-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer-content .footer-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-set .footer-item {
+  width: 20%;
+  padding: 1%;
+  height: 100%;
+  font-size: 15px;
+}
+.footer-item .footer-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-link .icon {
+  padding: 5%;
+}
+
+.length {
+  height: 100%;
+  padding: 5%;
+}
+.footer-item a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.footer-link span {
+  width: 85%;
+  padding: 5% 1%;
+  padding-left: 4%;
+  height: 100%;
+}
+.socials {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.socials a {
+  padding: 3%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+/* Responsive styling for screen sizes of 429px and below*/
+@media only screen and (max-width: 430px) {
+  #navbar ul {
+    width: 50%;
+  }
+  .curvy {
+    top: 9%;
+    height: 6%;
+  }
+  .curvy img {
+    height: 100%;
+  }
+  .intro {
+    height: 100vh;
+  }
+  .intro .content {
+    width: 90%;
+  }
+  .illustration-image {
+    width: 100%;
+  }
+  .bold {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+  }
+  .intro .content p.text {
+    font-size: 14px;
+  }
+  .space {
+    display: none;
+  }
+  .intro .cta button,
+  .form-footer .cta button {
+    width: 200px;
+  }
+  .offers {
+    height: unset;
+    margin-top: unset;
+  }
+  .offers .offer-content {
+    height: unset;
+  }
+  .offer-content > div {
+    width: 100%;
+    margin: 10%;
+    height: 300px;
+  }
+  .flyo-works {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flyo-works .productive-image {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  .flyo-works .cta-texts {
+    width: 100%;
+    height: 250px;
+    align-items: unset;
+    text-align: center;
+  }
+  .cta-texts p {
+    width: 100%;
+  }
+  .cta-texts a {
+    font-size: 16px;
+    align-self: center;
+  }
+  .testimonies {
+    padding: 20% 5%;
+  }
+  .test-container {
+    flex-direction: column;
+    height: unset;
+  }
+  .test-container > img {
+    width: 30px;
+    top: 0;
+    left: 0;
+  }
+  .test-container .test img {
+    width: 40px;
+    height: 40px;
+  }
+  .test-container .test {
+    width: 100%;
+    padding: 5%;
+    margin: 5%;
+    height: 200px;
+    font-size: 13px;
+  }
+  .form-footer {
+    height: unset;
+  }
+  .form-footer .empty {
+    height: 300px;
+  }
+  .form-footer .form {
+    width: 90%;
+    height: 400px;
+    padding: 5%;
+  }
+  .form-footer .form div {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+  }
+  .form-footer .form div input {
+    width: 100%;
+  }
+  .form-footer footer {
+    height: 1000px;
+  }
+  footer .footer-content {
+    width: 80%;
+    margin-top: 60%;
+    justify-content: center;
+  }
+  footer .footer-content .footer-set {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 700px;
+  }
+  .footer-set .footer-item {
+    width: 100%;
+  }
+  .socials {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .socials a {
+    padding: 4%;
+    width: 40px;
+    height: 40px;
+  }
+}
